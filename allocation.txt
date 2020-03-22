@@ -1,0 +1,22 @@
+cases=int(input())
+for t in range(cases):
+    house,money=map(int,input().split())
+    list1=list(map(int,input().split()))
+    list1.sort()
+    total=0
+    for j in range(house):
+        if(list1[j]<=money):
+            money-=list1[j]
+            total+=1
+            if(money!=0):
+                continue
+            else:
+                break
+    print("Case #{}: {}".format(t+1, total))
+        
+
+            
+            
+            
+        
+    
