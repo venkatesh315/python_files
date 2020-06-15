@@ -278,71 +278,26 @@ if __name__ == '__main__':
     t1_players = []
     t2_players = []
 
-    for i in batsman:
-        player = i
-        rate = batsman[i]
+    player_category = [batsman, bowlers, all_rounders, wkb]
 
-        m1 = total_amount[team1]
-        m2 = total_amount[team2]
-        print(m1)
-        print("pai")
-        current_bid = 0
-        print(m2)
+    for category in player_category:
+        
+        for i in category:
+            player = i
+            rate = category[i]
 
-        print("the current auction pool is BATSMEN")
-        print("The player is: ", player)
-        print("The base price is: ", rate)
-        m1, m2 = auction(player, rate, bid1, bid2, team1, team2, m1, m2, current_bid, current_bid1, current_bid2,
-                         t1_players, t2_players)
+            m1 = total_amount[team1]
+            m2 = total_amount[team2]
+            print(m1)
+            print("pai")
+            current_bid = 0
+            print(m2)
 
-    for j in bowlers:
-        player = j
-        rate = bowlers[j]
-
-        m1 = total_amount[team1]
-        m2 = total_amount[team2]
-        print(m1)
-        print("pai")
-        current_bid = 0
-        print(m2)
-
-        print("the current auction pool is BOWLERS")
-        print("The player is: ", player)
-        print("The base price is: ", rate)
-        m1, m2 = auction(player, rate, bid1, bid2, team1, team2, m1, m2, current_bid, current_bid1, current_bid2,
-                         t1_players, t2_players)
-
-    for k in all_rounders:
-        player = k
-        rate = all_rounders[k]
-
-        m1 = total_amount[team1]
-        m2 = total_amount[team2]
-        print(m1)
-        print("pai")
-        current_bid = 0
-        print(m2)
-
-        print("the current auction pool is ALL-ROUNDERS")
-        print("The player is: ", player)
-        print("The base price is: ", rate)
-        m1, m2 = auction(player, rate, bid1, bid2, team1, team2, m1, m2, current_bid, current_bid1, current_bid2,
-                         t1_players, t2_players)
-
-    for v in wkb:
-        player = v
-        rate = wkb[v]
-
-        m1 = total_amount[team1]
-        m2 = total_amount[team2]
-
-        current_bid = 0
-
-        print("the current auction pool is WKB")
-        print("The player is: ", player)
-        print("The base price is: ", rate)
-        m1, m2 = auction(player, rate, bid1, bid2, team1, team2, m1, m2, current_bid, current_bid1, current_bid2,
-                         t1_players, t2_players)
+            print("the current auction pool is ",i)
+            print("The player is: ", player)
+            print("The base price is: ", rate)
+            m1, m2 = auction(player, rate, bid1, bid2, team1, team2, m1, m2, current_bid, current_bid1, current_bid2,
+                            t1_players, t2_players)
 
     rate1 = 0
     rate2 = 0
