@@ -5,7 +5,7 @@ batsman = {"Steve Smith": 250, "Kane Williamson": 250, "S Lad": 100, "A Finch": 
            "Kedar Jadhav": 100, "Ruturaj Gaikwad": 100,
            "E Morgan": 250, "S Hetmyer": 100, "M pandey": 250, "David Miller": 100,
            "Shashank Singh": 100, "R Tripathi": 100, "D Warner": 500, "Shreyas Iyer": 250,
-           "Sarfraz Khan": 100, "Manddep Singh": 100, "P Shaw": 100, "Priyam Garg": 100,
+           "Sarfraz Khan": 100, "Mandeep Singh": 100, "P Shaw": 100, "Priyam Garg": 100,
            "Anmoolpreet Singh": 100, "M Vohra": 100, "Mayank Agarwal": 100, "Rohit Sharma": 500,
            "Karun Nair": 100, "Chris Gayle": 500, "Suryakumar Yadav": 250, "Chris Lynn": 250,
            "Saurabh Tiwary": 100, }
